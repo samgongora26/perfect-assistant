@@ -8,6 +8,7 @@
                                     <i class="zmdi zmdi-search"></i>
                                 </button>
                             </form>
+                            <p> Fecha 26/04/2020 </p>
                             <div class="header-button">
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
