@@ -11,6 +11,7 @@
     <!--Pruebas de gitub-->
     <!--prueba 2 de git-->
     <!--prueba 3 de git-->
+    
     <!-- Title Page-->
     <title>Perfect assistant</title>
 
@@ -133,15 +134,55 @@
                             </div>
                         </div>
                         <div class="row">
-
+                            <div class="col-lg-8">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Esta semana</h3>
+                                        <canvas id="singelBarChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Departamento 1</h3>
+                                        <canvas id="doughutChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-md-12">
-                                <div class="copyright">
-                                    <p>Copyright © 2020 Design by Colorlib. Code by <a href="https://github.com/samgongora26"> Saul S. Góngora Kú </a> <p>
+                            <div class="col-lg-4">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Departamento 2</h3>
+                                        <canvas id="doughutChart"></canvas>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-lg-4">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Departamento 3</h3>
+                                        <canvas id="doughutChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Departamento 4</h3>
+                                        <canvas id="doughutChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <?php
+                                include("plantillas/plantilla_footer.php");
+                            ?>
                         </div>
                     </div>
                 </div>
