@@ -58,13 +58,78 @@
                             <div class="col-md-12">
                                 <div class="overview-wrap">
                                     <h2 class="title-1">Bienvenido Amesarit pacheco </h2>
+                                    <button class="au-btn au-btn-icon au-btn--blue">
+                                        <i class="fa fa-download"></i>Reporte general 
+                                    </button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="row m-t-25">
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c1">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="fa fa-check-square""></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>Asistencias</h2>
+                                                <span>98%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c2">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="fa fa-user-times"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>Faltas</h2>
+                                                <span>2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c4">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-calendar-note"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>Descansos</h2>
+                                                <span>6</span>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c3">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="fas fa-exclamation-triangle"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>Críticos</h2>
+                                                <span>1</span>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        
                         <div class="row">
-
-
 
                         </div>
 

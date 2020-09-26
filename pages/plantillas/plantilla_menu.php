@@ -202,6 +202,10 @@
                                 <i class="fas fa-leaf"></i>Vacaciones</a>
                         </li>
                         <li>
+                            <a href="calendar.html">
+                                <i class="fas fa-exclamation-triangle"></i>Críticos</a>
+                        </li>
+                        <li>
                             <a href="map.html">
                                 <i class="fas fa-book"></i>Documentación</a>
                         </li>
