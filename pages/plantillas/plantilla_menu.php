@@ -119,7 +119,7 @@
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
                 <a href="#">
-                    <img src="../images/icon/logo.png" alt="PA" />
+                    <img src="../../images/icon/logo.png" alt="PA" />
                 </a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
