@@ -57,12 +57,12 @@
                         <div class="row">
                             <div class="col-md-9">
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">Empleados</h2>
+                                    <h2 class="title-1">Empleados inactivos</h2>
                                 </div>
                             </div>
                                 <div class="col-3 col-md-3">
                                     <select name="select" id="select" class="form-control">
-                                        <option value="">TOdos</option>
+                                        <option value="">Todos</option>
                                         <option value="">Monitoristas</option>
                                         <option value="">Guardias</option>
                                     </select>
@@ -88,7 +88,7 @@
                                                 <td>John</td>
                                                 <td>Doe</td>
                                                 <td>Monitorista</td>
-                                                <td class="process">Activo</td>
+                                                <td class="denied">Activo</td>
                                                 <td>
                                                     <div class="table-data-feature">
                                                         <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">

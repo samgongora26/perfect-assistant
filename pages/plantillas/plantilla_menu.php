@@ -139,6 +139,9 @@
                                 <li>
                                     <a href="index.html">Agregar</a>
                                 </li>
+                                <li>
+                                    <a href="index.html">Inactivos</a>
+                                </li>
                             </ul>
                         </li>
                         <li class=" has-sub">
