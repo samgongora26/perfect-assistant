@@ -126,7 +126,7 @@
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li class="active">
-                            <a href="table.html">
+                            <a href="../home/home.php">
                                 <i class="fas fa-home"></i>Home</a>
                         </li>
                         <li class=" has-sub">
@@ -134,27 +134,19 @@
                                 <i class="fas fa-user"></i>Empleados</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="index.html">Ver</a>
+                                    <a href="../empleados/empleados.php">Ver</a>
                                 </li>
                                 <li>
-                                    <a href="index.html">Agregar</a>
+                                    <a href="../empleados/agr_empleados.php">Agregar</a>
                                 </li>
                                 <li>
-                                    <a href="index.html">Inactivos</a>
+                                    <a href="../empleados/empleados_inactivos.php">Inactivos</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class=" has-sub">
-                            <a class="js-arrow" href="#">
+                        <li class="">
+                            <a href="../puestos/puestos.php">
                                 <i class="fas fa-users"></i>Puestos</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="index.html">Ver</a>
-                                </li>
-                                <li>
-                                    <a href="index.html">Agregar</a>
-                                </li>
-                            </ul>
                         </li>
                         <li>
                             <a href="chart.html">

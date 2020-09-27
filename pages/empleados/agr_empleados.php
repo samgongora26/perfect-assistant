@@ -104,15 +104,13 @@
                                                 </div>
                                             </div>
                                             <!--FECHA DE NAC-->
-
-                                            <!--Correo-->
                                             <div class="row form-group">
                                                 <div class="col col-md-3">
-                                                    <label for="exampleInputEmail2" class="form-control-label">Email</label>
+                                                    <label for="text-input" class=" form-control-label">Fecha de nacimiento</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="email" id="exampleInputEmail" placeholder="jane.doe@example.com" required="" class="form-control">
-                                                    <small class="form-text text-muted">Correo electronico  </small>
+                                                    <input type="text" id="text-input" name="text-input" placeholder="01/01/2000" class="form-control">
+                                                    <small class="form-text text-muted">Fecha de nacimiento</small>
                                                 </div>
                                             </div>
                                             <!--puesto-->
@@ -143,6 +141,26 @@
                                                         <option value="3">Option #3</option>
                                                     </select>
                                                     <small class="form-text text-muted">Horario</small>
+                                                </div>
+                                            </div>
+                                            <!--NUMERO-->
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="text-input" class=" form-control-label">Número telefonico</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="text" id="text-input" name="text-input" placeholder="999-999-9999" class="form-control">
+                                                    <small class="form-text text-muted">Número telefonico</small>
+                                                </div>
+                                            </div>
+                                            <!--Correo-->
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="exampleInputEmail2" class="form-control-label">Email</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="email" id="exampleInputEmail" placeholder="jane.doe@example.com" required="" class="form-control">
+                                                    <small class="form-text text-muted">Correo electronico  </small>
                                                 </div>
                                             </div>
                                         </div>
