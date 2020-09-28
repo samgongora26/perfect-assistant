@@ -34,7 +34,7 @@
                                             </div>
                                             <div class="account-dropdown__body">
                                                 <div class="account-dropdown__item">
-                                                    <a href="#">
+                                                    <a href="../usuario/configuracion.php">
                                                         <i class="zmdi zmdi-account"></i>Cuenta</a>
                                                 </div>
                                             </div>

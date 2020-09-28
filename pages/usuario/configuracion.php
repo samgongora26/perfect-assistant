@@ -63,7 +63,7 @@
                         </div>
                         
                         <div class="row m-t-20 justify-content-center">
-                            <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="col-lg-7 col-md-7 col-sm-12">
                                 <div class="card">
                                         <div class="card-body">
                                             <div class="mx-auto d-block">
@@ -76,19 +76,22 @@
                                             </div>
                                             <hr>
                                             <div class="card-text text-sm-center">
-                                                <i class="fa fa-user"></i> macheque@email.com
+                                                <i class="fa fa-envelope"></i> macheque@email.com
                                             </div>
                                             <div class="card-text text-sm-center">
-                                                <i class="fa fa-telephone"></i> 999-999-9999
+                                                <i class="fa fa-phone"></i> 999-999-9999
                                             </div>
                                             <div class="card-text text-sm-center">
-                                                <i class="fa fa-telephone"></i> 01/01/2000
+                                                <i class="fa fa-birthday-cake"></i> 01/01/2000
                                             </div>
                                         </div>
                                         <div class="card-footer">
                                             <strong class="card-title mb-3">Perfil de usuario</strong>
                                             <button type="submit" class="btn btn-success btn-sm float-right">
-                                                <i class="fa fa-check"></i> Editar
+                                                <i class="fa fa-edit"></i> Editar
+                                            </button>
+                                            <button type="submit" class="btn btn-warning btn-sm float-right mr-1">
+                                                <i class="fa fa-key "></i> Cambiar contraseña
                                             </button>
                                         </div>
                                     </div>
