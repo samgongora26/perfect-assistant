@@ -166,6 +166,11 @@
                                         </div>
                                         <!--/Formulario-->
                                     </div>
+                                    <div class="card-footer">
+                                        <button type="submit" class="btn btn-success btn-sm float-right">
+                                            <i class="fa fa-check"></i> Guardar
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
 
