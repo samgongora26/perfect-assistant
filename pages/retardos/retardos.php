@@ -57,13 +57,13 @@
                         <div class="row" >
                             <div class="col-md-8" >
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">Faltas</h2>
+                                    <h2 class="title-1">Retardos anteriores</h2>
                                 </div>
                             </div>
                             <div class="col-md-4" >
                                 <div class="row">
                                     <div class="col-md-7">
-                                        <label>Ver faltas de </label>
+                                        <label>Ver retardos de </label>
                                     </div>
                                     <div class="col-md-5">
                                         <input type="text" id="text-input" name="text-input" placeholder="01/01/2020" class="form-control">    
@@ -71,7 +71,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!--VER FALTAS DE UN DIA ESPECIFICO-->
+                        <!--VER RETARDOS DE UN DIA ESPECIFICO-->
                         <div class="row m-t-20">
                                 <div class="col-md-12">
                                     <!-- DATA TABLE-->
@@ -108,10 +108,10 @@
                                     <!-- END DATA TABLE-->
                                 </div>        
                         </div>
-                        <!-- / FALTAS DE UN DIA ESPECIFICO-->
+                        <!-- / RETARDOS DE UN DIA ESPECIFICO-->
 
-                        <!--VER FALTAS DE AYER-->
-                        <h4>Faltas de ayer</h4>
+                        <!--VER RETARDOS DE AYER-->
+                        <h4>Retardos de ayer</h4>
                         <div class="row m-t-20">
                                 <div class="col-md-12">
                                     <!-- DATA TABLE-->
@@ -148,10 +148,10 @@
                                     <!-- END DATA TABLE-->
                                 </div>        
                         </div>
-                        <!-- / FALTAS DE AYER-->
+                        <!-- / RETARDOS DE AYER-->
 
-                        <!--FALTAS DE ANTIER-->
-                        <h4>Faltas de antier</h4>
+                        <!--RETARDOS DE ANTIER-->
+                        <h4>Retardos de antier</h4>
                         <div class="row m-t-20">
                                 <div class="col-md-12">
                                     <!-- DATA TABLE-->
@@ -188,7 +188,7 @@
                                     <!-- END DATA TABLE-->
                                 </div>        
                         </div>  
-                        <!--/FALTAS DE ANTIER-->
+                        <!--/RETARDOS DE ANTIER-->
 
                         <div class="row">
                             <?php
