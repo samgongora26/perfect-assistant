@@ -79,13 +79,17 @@
                                         <table class="table table-borderless table-data3">
                                             <thead>
                                                 <tr>
+                                                    <th>Nombre</th>
                                                     <th>Puesto</th>
+                                                    <th>Fecha</th>
                                                     <th>operación</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
+                                                <tr>   
+                                                    <td>John Doe</td>
                                                     <td>Monitorista</td>
+                                                    <td>01/01/2020</td>
                                                     <td>
                                                         <div class="table-data-feature">
                                                             <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
@@ -104,8 +108,88 @@
                                     <!-- END DATA TABLE-->
                                 </div>        
                         </div>
+                        <!-- / DESCANSOS DE UN DIA ESPECIFICO-->
 
                         <!--VER DESCANSOS DE AYER-->
+                        <h4>Descansos de ayer</h4>
+                        <div class="row m-t-20">
+                                <div class="col-md-12">
+                                    <!-- DATA TABLE-->
+                                    <div class="table-responsive m-b-40">
+                                        <table class="table table-borderless table-data3">
+                                            <thead>
+                                                <tr>
+                                                    <th>Nombre</th>
+                                                    <th>Puesto</th>
+                                                    <th>Fecha</th>
+                                                    <th>operación</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>   
+                                                    <td>John Doe</td>
+                                                    <td>Monitorista</td>
+                                                    <td>01/01/2020</td>
+                                                    <td>
+                                                        <div class="table-data-feature">
+                                                            <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
+                                                                <i class="zmdi zmdi-edit"></i>
+                                                            </button>
+                                                            <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
+                                                                <i class="zmdi zmdi-delete"></i>
+                                                            </button>
+                                                        </div>
+                                                            
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- END DATA TABLE-->
+                                </div>        
+                        </div>
+                        <!-- / DESCANSOS DE AYER-->
+
+                        <!--DESCANSOS DE ANTIER-->
+                        <h4>Descansos de antier</h4>
+                        <div class="row m-t-20">
+                                <div class="col-md-12">
+                                    <!-- DATA TABLE-->
+                                    <div class="table-responsive m-b-40">
+                                        <table class="table table-borderless table-data3">
+                                            <thead>
+                                                <tr>
+                                                    <th>Nombre</th>
+                                                    <th>Puesto</th>
+                                                    <th>Fecha</th>
+                                                    <th>operación</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>   
+                                                    <td>John Doe</td>
+                                                    <td>Monitorista</td>
+                                                    <td>01/01/2020</td>
+                                                    <td>
+                                                        <div class="table-data-feature">
+                                                            <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
+                                                                <i class="zmdi zmdi-edit"></i>
+                                                            </button>
+                                                            <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
+                                                                <i class="zmdi zmdi-delete"></i>
+                                                            </button>
+                                                        </div>
+                                                            
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- END DATA TABLE-->
+                                </div>        
+                        </div>  
+                        <!--/DESCANSOS DE ANTIER-->
+
                         <div class="row">
                             <?php
                                 include("../plantillas/plantilla_footer.php");
