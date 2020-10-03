@@ -78,7 +78,46 @@
                         </div>
                         
                         <div class="row m-t-20">
-        
+                            <!--Columna izquierda-->
+                            <!--TABLA DE EMPLEADOS PARA AGREGAR-->
+                            <div class="col-md-6">
+                                <h4>Agregar descansos</h4>
+                                <div class="row m-t-20">
+                                        <div class="col-md-12">
+                                            <!-- DATA TABLE-->
+                                            <div class="table-responsive m-b-40">
+                                                <table class="table table-borderless table-data3">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Nombre</th>
+                                                            <th>Puesto</th>
+                                                            <th>Descansa </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>   
+                                                            <td>John Doe</td>
+                                                            <td>Monitorista</td>    
+                                                            <td>
+                                                                <div class="table-data-feature">
+                                                                    <select name="select" id="select" class="form-control">
+                                                                        <option value="0">NO</option>
+                                                                        <option value="1">Hoy</option>
+                                                                        <option value="2">Mañana</option>
+                                                                        <option value="3">Pasado</option>            
+                                                                    </select>
+                                                                </div>
+                                                                    
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- END DATA TABLE-->
+                                        </div>        
+                                </div>
+                            </div>
+                            <!--/TABLA DE EMPLEADOS PARA AGREGAR-->
                         </div>
 
                         <div class="row">
