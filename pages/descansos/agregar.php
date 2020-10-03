@@ -118,6 +118,67 @@
                                 </div>
                             </div>
                             <!--/TABLA DE EMPLEADOS PARA AGREGAR-->
+                            <!--TABLA DE DESCANSOS DE HOY-->
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4>Descansos de hoy</h4>
+                                        <div class="row m-t-20">
+                                                <div class="col-md-12">
+                                                    <!-- DATA TABLE-->
+                                                    <div class="table-responsive m-b-40">
+                                                        <table class="table table-borderless table-data3">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Nombre</th>
+                                                                    <th>Puesto</th>
+                                                                    <th>Fecha</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>   
+                                                                    <td>John Doe</td>
+                                                                    <td>Monitorista</td>    
+                                                                    <td>01/01/2020</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <!-- END DATA TABLE-->
+                                                </div>        
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h4>Descansos de Mañana</h4>
+                                        <div class="row m-t-20">
+                                                <div class="col-md-12">
+                                                    <!-- DATA TABLE-->
+                                                    <div class="table-responsive m-b-40">
+                                                        <table class="table table-borderless table-data3">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Nombre</th>
+                                                                    <th>Puesto</th>
+                                                                    <th>Fecha</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>   
+                                                                    <td>John Doe</td>
+                                                                    <td>Monitorista</td>    
+                                                                    <td>01/01/2020</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <!-- END DATA TABLE-->
+                                                </div>        
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!--/TABLA DE DESCANSOS DE HOY-->
                         </div>
 
                         <div class="row">
