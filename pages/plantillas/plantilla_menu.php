@@ -157,36 +157,20 @@
                                 <i class="fas fa-calendar-o""></i>Descansos</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="index.html">Descansos anteriores</a>
+                                    <a href="../descansos/anteriores.php">Descansos anteriores</a>
                                 </li>
                                 <li>
-                                    <a href="index.html">Agregar</a>
+                                    <a href="../descansos/agregar.php">Agregar</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class=" has-sub">
-                            <a class="js-arrow" href="#">
+                        <li>
+                            <a href="../faltas/faltas.php">
                                 <i class="fa fa-user-times"></i>Faltas</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="index.html">Ver anteriores</a>
-                                </li>
-                                <li>
-                                    <a href="index.html">De hoy</a>
-                                </li>
-                            </ul>
                         </li>
-                        <li class=" has-sub">
-                            <a class="js-arrow" href="#">
+                        <li>
+                            <a href="../retardos/retardos.php">
                                 <i class="fa fa-exclamation"></i>Retardos</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="index.html">Ver anteriores</a>
-                                </li>
-                                <li>
-                                    <a href="index.html">De hoy</a>
-                                </li>
-                            </ul>
                         </li>
                         <li>
                             <a href="calendar.html">
