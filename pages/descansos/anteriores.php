@@ -70,12 +70,42 @@
                                     </div>  
                                 </div>
                             </div>
-                            <div class="row m-t-20">
-                                
-                            
-                            </div>
+                        </div>
+                        <!--VER DESCANSOS DE UN DIA ESPECIFICO-->
+                        <div class="row m-t-20">
+                                <div class="col-md-12">
+                                    <!-- DATA TABLE-->
+                                    <div class="table-responsive m-b-40">
+                                        <table class="table table-borderless table-data3">
+                                            <thead>
+                                                <tr>
+                                                    <th>Puesto</th>
+                                                    <th>operación</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Monitorista</td>
+                                                    <td>
+                                                        <div class="table-data-feature">
+                                                            <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
+                                                                <i class="zmdi zmdi-edit"></i>
+                                                            </button>
+                                                            <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
+                                                                <i class="zmdi zmdi-delete"></i>
+                                                            </button>
+                                                        </div>
+                                                            
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- END DATA TABLE-->
+                                </div>        
                         </div>
 
+                        <!--VER DESCANSOS DE AYER-->
                         <div class="row">
                             <?php
                                 include("../plantillas/plantilla_footer.php");
