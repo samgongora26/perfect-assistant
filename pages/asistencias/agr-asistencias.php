@@ -66,10 +66,13 @@
                                         <label>Ver </label>
                                     </div>
                                     <div class="col-md-7">
-                                        <select name="select" id="select" class="form-control">
-                                            <option value="0">Todos</option>
-                                            <option value="1">Por puestos</option>           
-                                        </select>
+                                                <div class="rs-select2--dark rs-select2--md m-r-10 rs-select2--border">
+                                                    <select class="js-select2" name="property">
+                                                        <option selected="selected">Todos</option>
+                                                        <option value="">Por puestos</option>
+                                                    </select>
+                                                    <div class="dropDownSelect2"></div>
+                                                </div>
                                     </div>  
                                 </div>
                             </div>
@@ -97,11 +100,13 @@
                                                                 <td>Monitorista</td>    
                                                                 <td>
                                                                     <div class="table-data-feature">
-                                                                        <select name="select" id="select" class="form-control">
-                                                                            <option value="0">Si</option>
-                                                                            <option value="1">No</option>
-                                                                            <option value="2">Retardo</option>         
-                                                                        </select>
+                                                                        <div class="rs-select2--dark rs-select2--sm rs-select2--border">
+                                                                            <select class="js-select2" name="property">
+                                                                                <option selected="selected">Sí</option>
+                                                                                <option value="">No</option>
+                                                                            </select>
+                                                                            <div class="dropDownSelect2"></div>
+                                                                        </div>
                                                                     </div>
                                                                         
                                                                 </td>
@@ -140,11 +145,13 @@
                                                                 <td>Monitorista</td>    
                                                                 <td>
                                                                     <div class="table-data-feature">
-                                                                        <select name="select" id="select" class="form-control">
-                                                                            <option value="0">Si</option>
-                                                                            <option value="1">No</option>
-                                                                            <option value="2">Retardo</option>         
-                                                                        </select>
+                                                                        <div class="rs-select2--dark rs-select2--sm rs-select2--border">
+                                                                            <select class="js-select2" name="property">
+                                                                                <option selected="selected">Sí</option>
+                                                                                <option value="">No</option>
+                                                                            </select>
+                                                                            <div class="dropDownSelect2"></div>
+                                                                        </div>
                                                                     </div>
                                                                         
                                                                 </td>
@@ -174,15 +181,14 @@
                                                             <tr>   
                                                                 <td>John Doe</td>
                                                                 <td>Monitorista</td>    
-                                                                <td>
-                                                                    <div class="table-data-feature">
-                                                                        <select name="select" id="select" class="form-control">
-                                                                            <option value="0">Si</option>
-                                                                            <option value="1">No</option>
-                                                                            <option value="2">Retardo</option>         
+                                                                <td>    
+                                                                    <div class="rs-select2--dark rs-select2--sm rs-select2--border">
+                                                                        <select class="js-select2" name="property">
+                                                                            <option selected="selected">Sí</option>
+                                                                            <option value="">No</option>
                                                                         </select>
+                                                                        <div class="dropDownSelect2"></div>
                                                                     </div>
-                                                                        
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -216,14 +222,13 @@
                                                                 <td>John Doe</td>
                                                                 <td>Monitorista</td>    
                                                                 <td>
-                                                                    <div class="table-data-feature">
-                                                                        <select name="select" id="select" class="form-control">
-                                                                            <option value="0">Si</option>
-                                                                            <option value="1">No</option>
-                                                                            <option value="2">Retardo</option>         
+                                                                    <div class="rs-select2--dark rs-select2--sm  rs-select2--border">
+                                                                        <select class="js-select2" name="property">
+                                                                            <option selected="selected">Sí</option>
+                                                                            <option value="">No</option>
                                                                         </select>
+                                                                        <div class="dropDownSelect2"></div>
                                                                     </div>
-                                                                        
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -252,12 +257,12 @@
                                                                 <td>John Doe</td>
                                                                 <td>Monitorista</td>    
                                                                 <td>
-                                                                    <div class="table-data-feature">
-                                                                        <select name="select" id="select" class="form-control">
-                                                                            <option value="0">Si</option>
-                                                                            <option value="1">No</option>
-                                                                            <option value="2">Retardo</option>         
+                                                                    <div class="rs-select2--dark rs-select2--sm rs-select2--border">
+                                                                        <select class="js-select2" name="property">
+                                                                            <option selected="selected">Sí</option>
+                                                                            <option value="">No</option>
                                                                         </select>
+                                                                        <div class="dropDownSelect2"></div>
                                                                     </div>
                                                                         
                                                                 </td>
