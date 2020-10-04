@@ -148,10 +148,18 @@
                             <a href="../puestos/puestos.php">
                                 <i class="fas fa-users"></i>Puestos</a>
                         </li>
-                        <li>
-                            <a href="chart.html">
-                                <i class="fa fa-check-square"></i>Listas de asistencias y faltas</a>
-                        </li>
+                        <li class=" has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-check-square"></i>Listas de asistencias y faltas</a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="../asistencias/asistencias.php">Ver</a>
+                                </li>
+                                <li>
+                                    <a href="../empleados/agr_empleados.php">Agregar</a>
+                                </li>
+                            </ul>
+                        </li>   
                         <li class=" has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fas fa-calendar-o""></i>Descansos</a>
