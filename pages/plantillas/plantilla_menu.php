@@ -156,7 +156,7 @@
                                     <a href="../asistencias/asistencias.php">Ver</a>
                                 </li>
                                 <li>
-                                    <a href="../empleados/agr_empleados.php">Agregar</a>
+                                    <a href="../asistencias/agr-asistencias.php">Agregar</a>
                                 </li>
                             </ul>
                         </li>   

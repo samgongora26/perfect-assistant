@@ -57,7 +57,7 @@
                         <div class="row">
                             <div class="col-md-8" >
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">Pase de lista</h2>
+                                    <h2 class="title-1">Pase de lista de la fecha 01/01/2020</h2>
                                 </div>
                             </div>
                             <div class="col-md-4" >
@@ -73,7 +73,8 @@
                                                     </select>
                                                     <div class="dropDownSelect2"></div>
                                                 </div>
-                                    </div>  
+                                    </div>
+                                      
                                 </div>
                             </div>
                         </div>
