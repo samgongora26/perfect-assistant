@@ -62,7 +62,7 @@
                             </div>
                                 <div class="col-3 col-md-3">
                                     <select name="select" id="select" class="form-control">
-                                        <option value="">TOdos</option>
+                                        <option value="">Todos</option>
                                         <option value="">Monitoristas</option>
                                         <option value="">Guardias</option>
                                     </select>

@@ -116,6 +116,18 @@
                                                     </table>
                                                 </div>
                                                 <!-- END DATA TABLE-->
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <span>Notas de la asistencia</span>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <textarea name="textarea-input" id="textarea-input" style="min-width: 100%" rows="3"></textarea>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <button class="btn btn-success">Guardar asistencias</button>
+                                                    </div>
+                                                </div>
+
                                             </div>       
                                         </div>
                                     </div>
@@ -276,6 +288,21 @@
                                         </div>
                                     </div>
                                 </div>             
+                            </div>
+
+                            <div class="col-md-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <span>Notas de la asistencia</span>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <textarea name="textarea-input" id="textarea-input" style="min-width: 100%" rows="3"></textarea>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <button class="btn btn-success">Guardar asistencias</button>
+                                                    </div>
+                                                </div>
+
                             </div>
                             <!--/TABLA DE DESCANSOS DE HOY-->
                         </div>
