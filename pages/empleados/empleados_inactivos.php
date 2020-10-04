@@ -88,7 +88,7 @@
                                                 <td>John</td>
                                                 <td>Doe</td>
                                                 <td>Monitorista</td>
-                                                <td class="denied">Activo</td>
+                                                <td class="denied">Inactivo</td>
                                                 <td>
                                                     <div class="table-data-feature">
                                                         <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">

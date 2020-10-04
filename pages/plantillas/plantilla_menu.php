@@ -118,7 +118,7 @@
         <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
-                <a href="#">
+                <a href="../home/home.php">
                     <img src="../../images/icon/logo.png" alt="PA" />
                 </a>
             </div>
@@ -129,6 +129,17 @@
                             <a href="../home/home.php">
                                 <i class="fas fa-home"></i>Home</a>
                         </li>
+
+                        <li>
+                            <a href="../horarios/horarios.php">
+                                <i class="fas fa-clock-o"></i>Horarios</a>
+                        </li>
+
+                        <li class="">
+                            <a href="../puestos/puestos.php">
+                                <i class="fas fa-users"></i>Puestos</a>
+                        </li>
+
                         <li class=" has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fas fa-user"></i>Empleados</a>
@@ -144,22 +155,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="">
-                            <a href="../puestos/puestos.php">
-                                <i class="fas fa-users"></i>Puestos</a>
-                        </li>
-                        <li class=" has-sub">
-                            <a class="js-arrow" href="#">
-                                <i class="fas fa-check-square"></i>Listas de asistencias y faltas</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="../asistencias/asistencias.php">Ver</a>
-                                </li>
-                                <li>
-                                    <a href="../asistencias/agr-asistencias.php">Agregar</a>
-                                </li>
-                            </ul>
-                        </li>   
+
                         <li class=" has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fas fa-calendar-o""></i>Descansos</a>
@@ -172,6 +168,20 @@
                                 </li>
                             </ul>
                         </li>
+
+                        <li class=" has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-check-square"></i>Listas de asistencias y faltas</a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="../asistencias/asistencias.php">Ver</a>
+                                </li>
+                                <li>
+                                    <a href="../asistencias/agr-asistencias.php">Agregar</a>
+                                </li>
+                            </ul>
+                        </li>   
+                        
                         <li>
                             <a href="../faltas/faltas.php">
                                 <i class="fa fa-user-times"></i>Faltas</a>
@@ -180,16 +190,14 @@
                             <a href="../retardos/retardos.php">
                                 <i class="fa fa-exclamation"></i>Retardos</a>
                         </li>
-                        <li>
-                            <a href="calendar.html">
-                                <i class="fas fa-clock-o"></i>Horarios</a>
-                        </li>
-                        <li>
+                        
+                        <!--IMPLEMENTACIONES FUTURAS-->
+                        <!--li>
                             <a href="calendar.html">
                                 <i class="fas fa-leaf"></i>Vacaciones</a>
-                        </li>
+                        </li-->
                         <li>
-                            <a href="calendar.html">
+                            <a href="../criticos/criticos.php">
                                 <i class="fas fa-exclamation-triangle"></i>Críticos</a>
                         </li>
                         <li>

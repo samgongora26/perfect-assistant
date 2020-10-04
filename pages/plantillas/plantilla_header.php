@@ -2,18 +2,23 @@
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
                         <div class="header-wrap">
+                            <!--BARRA DE BUSQUEDA DE EMPLEADOS-->
+                            <!--Implementaciones futuras-->
                             <form class="form-header" action="" method="POST">
                                 <input class="au-input au-input--xl" type="text" name="search" placeholder="Búqueda rápida de empleados" />
                                 <button class="au-btn--submit" type="submit">
                                     <i class="zmdi zmdi-search"></i>
                                 </button>
                             </form>
-                            <p> Fecha 01/01/2020 </p>
+                            
                             <div class="header-button">
+                                <div class="noti-wrap mr-4">
+                                    <small class="mr-10">01/01/2020</small>
+                                </div>
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="image">
-                                            <img src="../../images/icon/avatar-01.jpg" alt="John Doe" />
+                                            <img src="../../images/icon/avatar-06.jpg" alt="John Doe" />
                                         </div>
                                         <div class="content">
                                             <a class="js-acc-btn" href="#">Amesarit Pacheco</a>
@@ -22,12 +27,12 @@
                                             <div class="info clearfix">
                                                 <div class="image">
                                                     <a href="#">
-                                                        <img src="../../images/icon/avatar-01.jpg" alt="John Doe" />
+                                                        <img src="../../images/icon/avatar-06.jpg" alt="John Doe" />
                                                     </a>
                                                 </div>
                                                 <div class="content">
                                                     <h5 class="name">
-                                                        <a href="#">john doe</a>
+                                                        <a href="#">Amesarit pacheco</a>
                                                     </h5>
                                                     <span class="email">amesarit@email.com</span>
                                                 </div>
