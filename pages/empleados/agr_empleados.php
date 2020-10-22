@@ -72,14 +72,14 @@
                                     </div>
                                     <div class="card-body card-block">
                                         <!--Formulario-->
-                                        <div action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                                        <form id="agr_empleado"  enctype="multipart/form-data" class="form-horizontal">
                                             <!--Nombress-->
                                             <div class="row form-group">
                                                 <div class="col col-md-3">
                                                     <label for="text-input" class=" form-control-label">Nombre(s)</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="text" id="text-input" name="text-input" placeholder="John" class="form-control">
+                                                    <input type="text" id="nombre" name="text-input" placeholder="John" class="form-control">
                                                     <!--small class="form-text text-muted">Nombres</small-->
                                                 </div>
                                             </div>
@@ -89,7 +89,7 @@
                                                     <label for="text-input" class=" form-control-label">Primer apellido</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="text" id="text-input" name="text-input" placeholder="Doe" class="form-control">
+                                                    <input type="text" id="apellido_pat" name="text-input" placeholder="Doe" class="form-control">
                                                     <small class="form-text text-muted">Apellido paterno</small>
                                                 </div>
                                             </div>
@@ -163,11 +163,11 @@
                                                     <small class="form-text text-muted">Correo electronico  </small>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </form>
                                         <!--/Formulario-->
                                     </div>
                                     <div class="card-footer">
-                                        <button type="submit" class="btn btn-success btn-sm float-right">
+                                        <button type="submit" onclick="metodo()" class="btn btn-success btn-sm float-right">
                                             <i class="fa fa-check"></i> Guardar
                                         </button>
                                     </div>
@@ -190,6 +190,7 @@
 
     </div>
 
+    <script src="app.js"></script>
     <!-- Jquery JS-->
     <script src="../../vendor/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap JS-->

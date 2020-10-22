@@ -1,3 +1,11 @@
+
+<?php
+	include("../../resources/db.php");
+    $link = Conectarse(); /*conexion a la bd*/
+    //echo "<p> Hola desde plantilla header </p>";
+    
+?>
+
 <header class="header-desktop">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">

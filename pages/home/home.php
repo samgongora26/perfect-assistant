@@ -50,7 +50,8 @@
 
             <!-- HEADER DESKTOP-->
             <?php
-                include("../plantillas/plantilla_header.php")
+                include("../plantillas/plantilla_header.php");
+                
             ?>
             <!-- HEADER DESKTOP-->
 
