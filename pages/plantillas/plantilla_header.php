@@ -3,6 +3,17 @@
 	include("../../resources/db.php");
     $link = Conectarse(); /*conexion a la bd*/
     //echo "<p> Hola desde plantilla header </p>";
+    //La fecha tiene un dia de más, asi que se le resta 1
+    $dia = date('d')-1;
+    //Hoy es el dia/mes/año
+    $hoy = $dia.'/'.date('m/Y'); 
+    //consulta para obtener el usuario
+   
+    $result = mysqli_query($link, "SELECT * FROM `usuarios` where id_usuario = 1");
+    $row=mysqli_fetch_array($result);
+    $nombre = $row["nombres"];
+    $apellido_p = $row["apellido_pat"];
+    $apellido_m = $row["apellido_mat"];
     
 ?>
 
@@ -21,15 +32,15 @@
                             
                             <div class="header-button">
                                 <div class="noti-wrap mr-4">
-                                    <small class="mr-10">01/01/2020</small>
+                                    <small class="mr-10"><?php echo $hoy; ?></small>
                                 </div>
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="image">
-                                            <img src="../../images/icon/avatar-06.jpg" alt="John Doe" />
+                                            <img src="../../images/icon/avatar-06.jpg" alt="profile img" />
                                         </div>
                                         <div class="content">
-                                            <a class="js-acc-btn" href="#">Amesarit Pacheco</a>
+                                            <a class="js-acc-btn" href="#"><?php echo $nombre .' '. $apellido_p.' '. $apellido_m;?></a>
                                         </div>
                                         <div class="account-dropdown js-dropdown">
                                             <div class="info clearfix">
@@ -40,7 +51,7 @@
                                                 </div>
                                                 <div class="content">
                                                     <h5 class="name">
-                                                        <a href="#">Amesarit pacheco</a>
+                                                        <a href="#"><?php echo $nombre .' '. $apellido_p.' '. $apellido_m;?></a>
                                                     </h5>
                                                     <span class="email">amesarit@email.com</span>
                                                 </div>
