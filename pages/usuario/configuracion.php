@@ -68,9 +68,9 @@
                                         <div class="card-body">
                                             <div class="mx-auto d-block">
                                                 <img class="rounded-circle mx-auto d-block" src="../../images/icon/avatar-06.jpg" alt="Card image cap">
-                                                <h5 class="text-sm-center mt-2 mb-1">Amesarit Pacheco</h5>
+                                                <h5 class="text-sm-center mt-2 mb-1"><?php echo $nombre .' '. $apellido_p .' '. $apellido_m?></h5>
                                                 <div class="location text-sm-center">
-                                                    <i class="fa fa-user"></i> Macheque123
+                                                    <i class="fa fa-user"></i>
                                                      
                                                 </div>
                                             </div>
@@ -87,16 +87,19 @@
                                         </div>
                                         <div class="card-footer">
                                             <strong class="card-title mb-3">Perfil de usuario</strong>
-                                            <button type="submit" class="btn btn-success btn-sm float-right">
+                                            <button type="submit" class="btn btn-success btn-sm float-right" data-toggle="modal" data-target="#edit">
                                                 <i class="fa fa-edit"></i> Editar
                                             </button>
                                             <button type="submit" class="btn btn-warning btn-sm float-right mr-1">
                                                 <i class="fa fa-key "></i> Cambiar contraseña
                                             </button>
+
+
                                         </div>
                                     </div>
 
-                                </div>
+                                </div>  
+                            </div>    
                         </div>
 
                         <div class="row">
@@ -108,6 +111,34 @@
                 </div>
             </div>
             <!-- END MAIN CONTENT-->
+            <!----------------MODAL DE CONFIGURACION----------------->
+            <!-- modal medium -->
+			<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="mediumModalLabel">Editar el usuario</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<p>
+								There are three species of zebras: the plains zebra, the mountain zebra and the Grévy's zebra. The plains zebra and the mountain
+								zebra belong to the subgenus Hippotigris, but Grévy's zebra is the sole species of subgenus Dolichohippus. The latter
+								resembles an ass, to which it is closely related, while the former two are more horse-like. All three belong to the
+								genus Equus, along with other living equids.
+							</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+							<button type="button" class="btn btn-primary">Confirm</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end modal medium -->
+
             <!-- END PAGE CONTAINER-->
         </div>
 
