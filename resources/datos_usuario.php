@@ -6,9 +6,9 @@
     $hoy = date('d/m/Y'); 
     //consulta para obtener el usuario
     $result = mysqli_query($link, "SELECT * FROM `usuarios` where id_usuario = 1");
-    $row=mysqli_fetch_array($result);
-    $nombre = $row["nombres"];
-    $apellido_p = $row["apellido_pat"];
-    $apellido_m = $row["apellido_mat"];
+    $usr=mysqli_fetch_array($result);
+    $nombre = $usr["nombres"];
+    $apellido_p = $usr["apellido_pat"];
+    $apellido_m = $usr["apellido_mat"];
 
 ?>

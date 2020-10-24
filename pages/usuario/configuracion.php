@@ -70,19 +70,18 @@
                                                 <img class="rounded-circle mx-auto d-block" src="../../images/icon/avatar-06.jpg" alt="Card image cap">
                                                 <h5 class="text-sm-center mt-2 mb-1"><?php echo $nombre .' '. $apellido_p .' '. $apellido_m?></h5>
                                                 <div class="location text-sm-center">
-                                                    <i class="fa fa-user"></i>
-                                                     
+                                                    <i class="fa fa-user"></i> <?php echo $usr["usuario"]; ?>
                                                 </div>
                                             </div>
                                             <hr>
                                             <div class="card-text text-sm-center">
-                                                <i class="fa fa-envelope"></i> macheque@email.com
+                                                <i class="fa fa-envelope"></i> <?php echo $usr["correo"]; ?>
                                             </div>
                                             <div class="card-text text-sm-center">
-                                                <i class="fa fa-phone"></i> 999-999-9999
+                                                <i class="fa fa-phone"></i> <?php echo $usr["telefono"]; ?>
                                             </div>
                                             <div class="card-text text-sm-center">
-                                                <i class="fa fa-birthday-cake"></i> 01/01/2000
+                                                <i class="fa fa-birthday-cake"></i> <?php echo $usr["fecha_nac"]; ?>
                                             </div>
                                         </div>
                                         <div class="card-footer">
@@ -90,7 +89,7 @@
                                             <button type="submit" class="btn btn-success btn-sm float-right" data-toggle="modal" data-target="#edit">
                                                 <i class="fa fa-edit"></i> Editar
                                             </button>
-                                            <button type="submit" class="btn btn-warning btn-sm float-right mr-1">
+                                            <button type="submit" class="btn btn-warning btn-sm float-right mr-1" data-toggle="modal" data-target="#edit_pass">
                                                 <i class="fa fa-key "></i> Cambiar contraseña
                                             </button>
 
@@ -124,20 +123,124 @@
 						</div>
 						<div class="modal-body">
 							<p>
-								There are three species of zebras: the plains zebra, the mountain zebra and the Grévy's zebra. The plains zebra and the mountain
-								zebra belong to the subgenus Hippotigris, but Grévy's zebra is the sole species of subgenus Dolichohippus. The latter
-								resembles an ass, to which it is closely related, while the former two are more horse-like. All three belong to the
-								genus Equus, along with other living equids.
+								<form id="edit_usr"  enctype="multipart/form-data" class="form-horizontal"> 
+                                    <!--Nombress-->
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="text-input" class=" form-control-label">usuario</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="text" id="nombre" name="text-input" placeholder="<?php echo $usr["usuario"]; ?>" value="<?php echo $usr["usuario"]; ?>" class="form-control">
+                                                    <!--small class="form-text text-muted">Nombres</small-->
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="text-input" class=" form-control-label">Nombre(s)</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="text" id="nombre" name="text-input" placeholder="<?php echo $nombre ?>" value="<?php echo $nombre?>" class="form-control">
+                                                    <!--small class="form-text text-muted">Nombres</small-->
+                                                </div>
+                                            </div>
+                                            <!--Apellido P-->
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="text-input" class=" form-control-label">Primer apellido</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="text" id="apellido_pat" name="text-input" placeholder="<?php echo $apellido_p ?>"  value="<?php echo $apellido_p; ?>"class="form-control">
+                                                    <small class="form-text text-muted">Apellido paterno</small>
+                                                </div>
+                                            </div>
+                                            <!--Apellido M-->
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="text-input" class=" form-control-label">Segundo apellido</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="text" id="text-input" name="text-input" placeholder="<?php echo $apellido_m; ?>" value="<?php echo $apellido_m; ?>" class="form-control">
+                                                    <small class="form-text text-muted">Apellido materno</small>
+                                                </div>
+                                            </div>
+                                            <!--FECHA DE NAC-->
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="text-input" class=" form-control-label">Fecha de nacimiento</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="text" id="text-input" name="text-input" placeholder="<?php echo $usr["fecha_nac"]; ?>" value="<?php echo $usr["fecha_nac"]; ?>" class="form-control">
+                                                    <small class="form-text text-muted">YYYY-MM-DD</small>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="text-input" class=" form-control-label">Correo</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="text" id="text-input" name="text-input" placeholder="<?php echo $usr["correo"]; ?>" value="<?php echo $usr["correo"]; ?>" class="form-control">
+                                                    <small class="form-text text-muted">Correo electronico</small>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="file-input" class=" form-control-label">Fotografía</label>
+                                                </div>  
+                                                <div class="col-12 col-md-9">
+                                                    <input type="file" id="file-input" value="<?php echo $usr["foto"]; ?>" name="file-input" class="form-control-file">
+                                                </div>
+                                            </div>
+                                </form>
 							</p>
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-							<button type="button" class="btn btn-primary">Confirm</button>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+							<button type="button" class="btn btn-primary">Guardar</button>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- end modal medium -->
+            <!-- end modal medium -->
+            <!-- modal small -->
+			<div class="modal fade" id="edit_pass" tabindex="-1" role="dialog" aria-labelledby="smallmodalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-sm" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="smallmodalLabel">Cambiar contraseña</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+                                        <form action="" method="post" class="">
+                                            <div class="row form-group">
+                                                <div class="col-12">
+                                                    <input type="password" id="hf-password" name="hf-password" placeholder="Enter Password..." class="form-control">
+                                                    <span class="help-block">Contraseña acutual</span>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col-12">
+                                                    <input type="password" id="hf-password" name="hf-password" placeholder="Enter Password..." class="form-control">
+                                                    <span class="help-block">Nueva contraseña</span>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col-12 ">
+                                                    <input type="password" id="hf-password" name="hf-password" placeholder="Enter Password..." class="form-control">
+                                                    <span class="help-block">Confirma la nueva contraseña</span>
+                                                </div>
+                                            </div>
+                                        </form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Canncelar</button>
+							<button type="button" class="btn btn-primary">Confirmar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end modal small -->
 
             <!-- END PAGE CONTAINER-->
         </div>
