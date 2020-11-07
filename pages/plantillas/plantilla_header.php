@@ -2,7 +2,8 @@
 <?php
 	include("../../resources/db.php");
     $link = Conectarse(); /*conexion a la bd*/
-    include("../../resources/datos_usuario.php")
+    include("../../resources/datos_usuario.php"); //Para obtneer el nombre del usuario
+    include("../../resources/date.php"); //para obtener la fecha
 ?>
 
 <header class="header-desktop">
@@ -25,21 +26,21 @@
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="image">
-                                            <img src="../../images/icon/avatar-06.jpg" alt="profile img" />
+                                            <img src="<?php echo $foto; ?>" alt="profile img" />
                                         </div>
                                         <div class="content">
-                                            <a class="js-acc-btn" href="#"><?php echo $nombre .' '. $apellido_p.' '. $apellido_m;?></a>
+                                            <a class="js-acc-btn" href="../usuario/configuracion.php"><?php echo $nombre .' '. $apellido_p.' '. $apellido_m;?></a>
                                         </div>
                                         <div class="account-dropdown js-dropdown">
                                             <div class="info clearfix">
                                                 <div class="image">
-                                                    <a href="#">
-                                                        <img src="../../images/icon/avatar-06.jpg" alt="John Doe" />
+                                                    <a href="../usuario/configuracion.php">
+                                                        <img src="<?php echo $foto; ?>" alt="John Doe" />
                                                     </a>
                                                 </div>
                                                 <div class="content">
                                                     <h5 class="name">
-                                                        <a href="#"><?php echo $nombre .' '. $apellido_p.' '. $apellido_m;?></a>
+                                                        <a href="../usuario/configuracion.php"><?php echo $nombre .' '. $apellido_p.' '. $apellido_m;?></a>
                                                     </h5>
                                                     <span class="email">amesarit@email.com</span>
                                                 </div>

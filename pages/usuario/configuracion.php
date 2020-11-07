@@ -67,7 +67,7 @@
                                 <div class="card">
                                         <div class="card-body">
                                             <div class="mx-auto d-block">
-                                                <img class="rounded-circle mx-auto d-block" src="../../images/icon/avatar-06.jpg" alt="Card image cap">
+                                                <img class="rounded-circle mx-auto d-block" src="<?php echo $foto ?>" alt="Card image cap">
                                                 <h5 class="text-sm-center mt-2 mb-1"><?php echo $nombre .' '. $apellido_p .' '. $apellido_m?></h5>
                                                 <div class="location text-sm-center">
                                                     <i class="fa fa-user"></i> <?php echo $usr["usuario"]; ?>
@@ -100,6 +100,7 @@
                                 </div>  
                             </div>    
                         </div>
+                        <?php echo "foto $foto"; ?>
 
                         <div class="row">
                             <?php
