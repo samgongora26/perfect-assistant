@@ -67,7 +67,9 @@
                                 <div class="card">
                                         <div class="card-body">
                                             <div class="mx-auto d-block">
-                                                <img class="rounded-circle mx-auto d-block" src="<?php echo $foto ?>" alt="Card image cap">
+                                                <button class="mx-auto d-block" data-toggle="modal" data-target="#edit_foto">
+                                                    <img class="rounded-circle"src="<?php echo $foto ?>" style="height: 100px; width: 100px;" alt="Card image cap">
+                                                </button>
                                                 <h5 class="text-sm-center mt-2 mb-1"><?php echo $nombre .' '. $apellido_p .' '. $apellido_m?></h5>
                                                 <div class="location text-sm-center">
                                                     <i class="fa fa-user"></i> <?php echo $usr["usuario"]; ?>
@@ -100,7 +102,6 @@
                                 </div>  
                             </div>    
                         </div>
-                        <?php echo "foto $foto"; ?>
 
                         <div class="row">
                             <?php
@@ -112,7 +113,7 @@
             </div>
             <!-- END MAIN CONTENT-->
             <!----------------MODAL DE CONFIGURACION----------------->
-            <!-- modal medium -->
+            <!-- MODAL DE EDICION DE USUARIO-->
 			<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
 				<div class="modal-dialog modal-lg" role="document">
 					<div class="modal-content">
@@ -183,14 +184,7 @@
                                                     <small class="form-text text-muted">Correo electronico</small>
                                                 </div>
                                             </div>
-                                            <div class="row form-group">
-                                                <div class="col col-md-3">
-                                                    <label for="file-input" class=" form-control-label">Fotografía</label>
-                                                </div>  
-                                                <div class="col-12 col-md-9">
-                                                    <input type="file" id="file-input" value="<?php echo $usr["foto"]; ?>" name="file-input" class="form-control-file">
-                                                </div>
-                                            </div>
+                                            
                                 </form>
 							</p>
 						</div>
@@ -201,8 +195,8 @@
 					</div>
 				</div>
 			</div>
-            <!-- end modal medium -->
-            <!-- modal small -->
+            <!-- MODAL DE EDICION DE USUARIO-->
+            <!-- MODAL DE EDICION DE CONTRASEÑA-->
 			<div class="modal fade" id="edit_pass" tabindex="-1" role="dialog" aria-labelledby="smallmodalLabel" aria-hidden="true">
 				<div class="modal-dialog modal-sm" role="document">
 					<div class="modal-content">
@@ -241,7 +235,37 @@
 					</div>
 				</div>
 			</div>
-			<!-- end modal small -->
+			<!-- MODAL DE EDICION DE CONTRASEÑA -->
+            <!-- MODAL DE EDICION DE FOTO -->
+			<div class="modal fade" id="edit_foto" tabindex="-1" role="dialog" aria-labelledby="smallmodalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-sm" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="smallmodalLabel">Cambiar fotografía</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+                                        <form action="" method="post" class="mx-auto">
+                                            <div class="row form-group mx-auto">
+                                                <div class="col col-md-12">
+                                                    <label for="file-input" class=" form-control-label">Fotografía</label>
+                                                </div>  
+                                                <div class="col-12 col-md-12 mx-auto">
+                                                    <input type="file" id="file-input" value="<?php echo $usr["foto"]; ?>" name="file-input" class="form-control-file">
+                                                </div>
+                                            </div>
+                                        </form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Canncelar</button>
+							<button type="button" class="btn btn-primary">Confirmar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- MODAL DE EDICION DE FOTO -->
 
             <!-- END PAGE CONTAINER-->
         </div>

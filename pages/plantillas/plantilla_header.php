@@ -26,7 +26,7 @@
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="image">
-                                            <img src="<?php echo $foto; ?>" alt="profile img" />
+                                            <img src="<?php echo $foto; ?>"style="height: 30px; width: 30px;" alt="profile img" />
                                         </div>
                                         <div class="content">
                                             <a class="js-acc-btn" href="../usuario/configuracion.php"><?php echo $nombre .' '. $apellido_p.' '. $apellido_m;?></a>
@@ -35,14 +35,14 @@
                                             <div class="info clearfix">
                                                 <div class="image">
                                                     <a href="../usuario/configuracion.php">
-                                                        <img src="<?php echo $foto; ?>" alt="John Doe" />
+                                                        <img src="<?php echo $foto; ?>" style="height: 50px; width: 50px;"  alt="John Doe" />
                                                     </a>
                                                 </div>
                                                 <div class="content">
                                                     <h5 class="name">
                                                         <a href="../usuario/configuracion.php"><?php echo $nombre .' '. $apellido_p.' '. $apellido_m;?></a>
                                                     </h5>
-                                                    <span class="email">amesarit@email.com</span>
+                                                    <span class="email"><?php echo "$correo"; ?></span>
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__body">

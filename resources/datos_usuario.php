@@ -7,6 +7,7 @@
     $apellido_p = $usr["apellido_pat"];
     $apellido_m = $usr["apellido_mat"];
     $foto = $usr["foto"];
+    $correo = $usr["correo"];
 
     //si la foto está vacia carga esta por defecto
     if($foto == ""){
