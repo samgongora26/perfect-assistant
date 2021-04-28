@@ -3,7 +3,7 @@
 	//include("../../resources/db.php");
     //$link = Conectarse(); /*conexion a la bd*/
     //include("../../resources/datos_usuario.php"); //Para obtneer el nombre del usuario
-    //include("../../resources/date.php"); //para obtener la fecha
+    include("../../../inc/admin/date.php"); //para obtener la fecha
 ?>
 
 <header class="header-desktop">
@@ -26,7 +26,7 @@
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="image">
-                                            <img src="../../images/icon/avatar-03.jpg"style="" alt="profile img" />
+                                            <img src="../../images/icon/avatar-06.jpg"style="" alt="profile img" />
                                         </div>
                                         <div class="content">
                                             <a class="js-acc-btn" href="../usuario/configuracion.php"><?php echo $nombre .' '. $apellido_p.' '. $apellido_m;?></a>
@@ -35,7 +35,7 @@
                                             <div class="info clearfix">
                                                 <div class="image">
                                                     <a href="../usuario/configuracion.php">
-                                                        <img src="../../images/icon/avatar-03.jpg" style="height: 50px; width: 50px;"  alt="John Doe" />
+                                                        <img src="../../images/icon/avatar-06.jpg" style="height: 50px; width: 50px;"  alt="John Doe" />
                                                     </a>
                                                 </div>
                                                 <div class="content">

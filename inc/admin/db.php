@@ -4,7 +4,7 @@ function Conectarse(){
 		echo "Error conectando a la base de datos.";
 		exit();
 	}
-	if(!mysqli_select_db($link,"PA")){
+	if(!mysqli_select_db($link,"pa")){
 		echo "Error seleccionando la base de datos.";
 		exit();
 	}
