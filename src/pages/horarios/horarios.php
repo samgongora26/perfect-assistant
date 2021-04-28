@@ -37,8 +37,9 @@
 <body class="animsition">
     <div class="page-wrapper">
         <!--MENU ASIDE IQUIERDA-->
+        <!--MENU ASIDE IQUIERDA-->
         <?php
-            include("../plantillas/plantilla_menu.php");
+            include("../../templates/plantillas/plantilla_menu.php");
         ?>
         <!-- / MENU-->
         <!-- PAGE CONTAINER-->
@@ -46,9 +47,9 @@
 
             <!-- HEADER DESKTOP-->
             <?php
-                include("../plantillas/plantilla_header.php")
+                include("../../templates/plantillas/plantilla_header.php");
+                
             ?>
-            <!-- HEADER DESKTOP-->
 
             <!-- MAIN CONTENT-->
             <div class="main-content">
@@ -57,7 +58,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">Puestos</h2>
+                                    <h2 class="title-1">Horarios</h2>
                                 </div>
                             </div>
                         </div>
@@ -77,7 +78,7 @@
                                                     <label for="text-input" class=" form-control-label">Nombre</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="text" id="text-input" name="text-input" placeholder="John" class="form-control">
+                                                    <input type="text" id="text-input" name="text-input" placeholder="primer turno" class="form-control">
                                                     <!--small class="form-text text-muted">Nombres</small-->
                                                 </div>
                                             </div>
@@ -97,13 +98,17 @@
                                     <table class="table table-borderless table-data3">
                                         <thead>
                                             <tr>
-                                                <th>Puesto</th>
-                                                <th>operación</th>
+                                                <th>Nombre</th>
+                                                <th>Hora inicio</th>
+                                                <th>Hora fin</th>
+                                                <th>operaciones</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Monitorista</td>
+                                                <td>Primer turno</td>
+                                                <td>6:00 AM</td>
+                                                <td>2:00 PM</td>
                                                 <td>
                                                     <div class="table-data-feature">
                                                         <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
@@ -128,7 +133,7 @@
 
                         <div class="row">
                             <?php
-                                include("../plantillas/plantilla_footer.php");
+                                include("../../templates/plantillas/plantilla_footer.php");
                             ?>
                         </div>
                     </div>

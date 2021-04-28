@@ -38,7 +38,7 @@
     <div class="page-wrapper">
         <!--MENU ASIDE IQUIERDA-->
         <?php
-            include("../plantillas/plantilla_menu.php");
+            include("../../templates/plantillas/plantilla_menu.php");
         ?>
         <!-- / MENU-->
         <!-- PAGE CONTAINER-->
@@ -46,7 +46,8 @@
 
             <!-- HEADER DESKTOP-->
             <?php
-                include("../plantillas/plantilla_header.php")
+                include("../../templates/plantillas/plantilla_header.php");
+                
             ?>
             <!-- HEADER DESKTOP-->
 
@@ -57,13 +58,13 @@
                         <div class="row" >
                             <div class="col-md-8" >
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">Descansos anteriores</h2>
+                                    <h2 class="title-1">Retardos de hoy</h2>
                                 </div>
                             </div>
                             <div class="col-md-4" >
                                 <div class="row">
                                     <div class="col-md-7">
-                                        <label>Ver descansos de </label>
+                                        <label>Ver retardos de </label>
                                     </div>
                                     <div class="col-md-5">
                                         <input type="text" id="text-input" name="text-input" placeholder="01/01/2020" class="form-control">    
@@ -71,7 +72,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!--VER DESCANSOS DE UN DIA ESPECIFICO-->
+                        <!--VER RETARDOS DE UN DIA ESPECIFICO-->
                         <div class="row m-t-20">
                                 <div class="col-md-12">
                                     <!-- DATA TABLE-->
@@ -108,10 +109,10 @@
                                     <!-- END DATA TABLE-->
                                 </div>        
                         </div>
-                        <!-- / DESCANSOS DE UN DIA ESPECIFICO-->
+                        <!-- / RETARDOS DE UN DIA ESPECIFICO-->
 
-                        <!--VER DESCANSOS DE AYER-->
-                        <h4>Descansos de ayer</h4>
+                        <!--VER RETARDOS DE AYER-->
+                        <h4>Retardos de ayer</h4>
                         <div class="row m-t-20">
                                 <div class="col-md-12">
                                     <!-- DATA TABLE-->
@@ -148,10 +149,10 @@
                                     <!-- END DATA TABLE-->
                                 </div>        
                         </div>
-                        <!-- / DESCANSOS DE AYER-->
+                        <!-- / RETARDOS DE AYER-->
 
-                        <!--DESCANSOS DE ANTIER-->
-                        <h4>Descansos de antier</h4>
+                        <!--RETARDOS DE ANTIER-->
+                        <h4>Retardos de antier</h4>
                         <div class="row m-t-20">
                                 <div class="col-md-12">
                                     <!-- DATA TABLE-->
@@ -188,11 +189,11 @@
                                     <!-- END DATA TABLE-->
                                 </div>        
                         </div>  
-                        <!--/DESCANSOS DE ANTIER-->
+                        <!--/RETARDOS DE ANTIER-->
 
                         <div class="row">
                             <?php
-                                include("../plantillas/plantilla_footer.php");
+                                include("../../templates/plantillas/plantilla_footer.php");
                             ?>
                         </div>
                     </div>

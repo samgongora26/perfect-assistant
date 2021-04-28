@@ -42,7 +42,7 @@
     <div class="page-wrapper">
         <!--MENU ASIDE IQUIERDA-->
         <?php
-            include("../plantillas/plantilla_menu.php");
+            include("../../templates/plantillas/plantilla_menu.php");
         ?>
         <!-- / MENU-->
         <!-- PAGE CONTAINER-->
@@ -50,7 +50,7 @@
 
             <!-- HEADER DESKTOP-->
             <?php
-                include("../plantillas/plantilla_header.php");
+                include("../../templates/plantillas/plantilla_header.php");
                 
             ?>
             <!-- HEADER DESKTOP-->
@@ -182,7 +182,7 @@
 
                         <div class="row">
                             <?php
-                                include("../plantillas/plantilla_footer.php");
+                                include("../../templates/plantillas/plantilla_footer.php");
                             ?>
                         </div>
                     </div>

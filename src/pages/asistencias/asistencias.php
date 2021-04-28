@@ -38,7 +38,7 @@
     <div class="page-wrapper">
         <!--MENU ASIDE IQUIERDA-->
         <?php
-            include("../plantillas/plantilla_menu.php");
+            include("../../templates/plantillas/plantilla_menu.php");
         ?>
         <!-- / MENU-->
         <!-- PAGE CONTAINER-->
@@ -46,7 +46,8 @@
 
             <!-- HEADER DESKTOP-->
             <?php
-                include("../plantillas/plantilla_header.php")
+                include("../../templates/plantillas/plantilla_header.php");
+                
             ?>
             <!-- HEADER DESKTOP-->
 
@@ -57,21 +58,22 @@
                         <div class="row" >
                             <div class="col-md-8" >
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">Retardos de hoy</h2>
+                                    <h2 class="title-1">Asistencias de hoy</h2>
                                 </div>
                             </div>
                             <div class="col-md-4" >
                                 <div class="row">
-                                    <div class="col-md-7">
-                                        <label>Ver retardos de </label>
+                                    <div class="col-md-6">
+                                        <label>Asistencias de</label>
                                     </div>
                                     <div class="col-md-5">
-                                        <input type="text" id="text-input" name="text-input" placeholder="01/01/2020" class="form-control">    
+                                        <input type="text" id="text-input" name="text-input" placeholder="01/01/2020" class="form-control">
+                                        <small>Presiona enter</small>   
                                     </div>  
                                 </div>
                             </div>
                         </div>
-                        <!--VER RETARDOS DE UN DIA ESPECIFICO-->
+                        <!--VER ASISTENCIAS DE UN DIA ESPECIFICO-->
                         <div class="row m-t-20">
                                 <div class="col-md-12">
                                     <!-- DATA TABLE-->
@@ -108,10 +110,10 @@
                                     <!-- END DATA TABLE-->
                                 </div>        
                         </div>
-                        <!-- / RETARDOS DE UN DIA ESPECIFICO-->
+                        <!-- / ASISTENCIAS DE UN DIA ESPECIFICO-->
 
-                        <!--VER RETARDOS DE AYER-->
-                        <h4>Retardos de ayer</h4>
+                        <!--VER ASISTENCIAS DE AYER-->
+                        <h4>Asistencias de ayer</h4>
                         <div class="row m-t-20">
                                 <div class="col-md-12">
                                     <!-- DATA TABLE-->
@@ -148,10 +150,10 @@
                                     <!-- END DATA TABLE-->
                                 </div>        
                         </div>
-                        <!-- / RETARDOS DE AYER-->
+                        <!-- / ASISTENCIAS DE AYER-->
 
-                        <!--RETARDOS DE ANTIER-->
-                        <h4>Retardos de antier</h4>
+                        <!--ASISTENCIAS DE ANTIER-->
+                        <h4>Asistencias de antier</h4>
                         <div class="row m-t-20">
                                 <div class="col-md-12">
                                     <!-- DATA TABLE-->
@@ -188,11 +190,11 @@
                                     <!-- END DATA TABLE-->
                                 </div>        
                         </div>  
-                        <!--/RETARDOS DE ANTIER-->
+                        <!--/ASISTENCIAS DE ANTIER-->
 
                         <div class="row">
                             <?php
-                                include("../plantillas/plantilla_footer.php");
+                                include("../../templates/plantillas/plantilla_footer.php");
                             ?>
                         </div>
                     </div>
