@@ -110,7 +110,7 @@
                                                     <label for="text-input" class=" form-control-label">usuario</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="text" id="usuario_editar" placeholder="<?php echo $usr["usuario"]; ?>" value="<?php echo $usr["usuario"]; ?>" class="form-control">
+                                                    <input type="text" id="usuario_editar" placeholder="<?php echo $usr["usuario"]; ?>" value="<?php echo $usr["usuario"]; ?>" class="form-control" required>
                                                     <!--small class="form-text text-muted">Nombres</small-->
                                                 </div>
                                             </div>
@@ -119,7 +119,7 @@
                                                     <label for="text-input" class=" form-control-label">Nombre(s)</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="text" id="nombre_editar" placeholder="<?php echo $nombre ?>" value="<?php echo $nombre?>" class="form-control">
+                                                    <input type="text" id="nombre_editar" placeholder="<?php echo $nombre ?>" value="<?php echo $nombre?>" class="form-control" required>
                                                     <!--small class="form-text text-muted">Nombres</small-->
                                                 </div>
                                             </div>
@@ -128,7 +128,7 @@
                                                     <label for="text-input" class=" form-control-label">Telefono</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="text" id="telefono_editar"  placeholder="<?php echo $usr["telefono"] ?>" value="<?php echo $usr["telefono"]?>" class="form-control" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
+                                                    <input type="text" id="telefono_editar"  placeholder="<?php echo $usr["telefono"] ?>" value="<?php echo $usr["telefono"]?>" class="form-control" required onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
                                                     <!--small class="form-text text-muted">Nombres</small-->
                                                 </div>
                                             </div>
@@ -137,7 +137,7 @@
                                                     <label for="text-input" class=" form-control-label">Correo</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="text" id="correo_editar"  placeholder="<?php echo $usr["correo"]; ?>" value="<?php echo $usr["correo"]; ?>" class="form-control">
+                                                    <input type="text" id="correo_editar"  placeholder="<?php echo $usr["correo"]; ?>" value="<?php echo $usr["correo"]; ?>" class="form-control" required>
                                                     <small class="form-text text-muted">Correo electronico</small>
                                                 </div>
                                             </div>
@@ -167,19 +167,19 @@
                                         <form action="" method="post" class="">
                                             <div class="row form-group">
                                                 <div class="col-12">
-                                                    <input type="password" id="hf-password" name="hf-password" placeholder="Enter Password..." class="form-control">
+                                                    <input type="password" id="contrasenia_actual" placeholder="Enter Password..." class="form-control" require>
                                                     <span class="help-block">Contraseña acutual</span>
                                                 </div>
                                             </div>
                                             <div class="row form-group">
                                                 <div class="col-12">
-                                                    <input type="password" id="hf-password" name="hf-password" placeholder="Enter Password..." class="form-control">
+                                                    <input type="password" id="nueva_contrasenia" placeholder="Enter Password..." class="form-control" require>
                                                     <span class="help-block">Nueva contraseña</span>
                                                 </div>
                                             </div>
                                             <div class="row form-group">
                                                 <div class="col-12 ">
-                                                    <input type="password" id="hf-password" name="hf-password" placeholder="Enter Password..." class="form-control">
+                                                    <input type="password" id="nueva_contrasenia2" placeholder="Enter Password..." class="form-control" require>
                                                     <span class="help-block">Confirma la nueva contraseña</span>
                                                 </div>
                                             </div>
@@ -187,7 +187,7 @@
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-secondary" data-dismiss="modal">Canncelar</button>
-							<button type="button" class="btn btn-primary">Confirmar</button>
+							<button type="button" class="btn btn-primary" onclick="editar_contrasenia()">Confirmar</button>
 						</div>
 					</div>
 				</div>

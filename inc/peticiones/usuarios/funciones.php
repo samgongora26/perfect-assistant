@@ -10,6 +10,10 @@ switch ($accion) {
     case "actualizar_usuario":
         $resultado = actualizar_usuario();
         break;
+
+    case "actualizar_contrasenia":
+        $resultado = actualizar_contrasenia();
+        break;
     
 }
 
