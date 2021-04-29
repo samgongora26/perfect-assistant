@@ -1,3 +1,7 @@
+<?php 
+    //Se hace llamado a la sesion
+    include("../../../inc/admin/sesion.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
