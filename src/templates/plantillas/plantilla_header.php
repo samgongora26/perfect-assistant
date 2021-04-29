@@ -1,9 +1,8 @@
 
 <?php
-	//include("../../resources/db.php");
-    //$link = Conectarse(); /*conexion a la bd*/
-    //include("../../resources/datos_usuario.php"); //Para obtneer el nombre del usuario
-    include("../../../inc/admin/date.php"); //para obtener la fecha
+	
+    include("../../../inc/admin/datos_usuario.php"); //Para obtneer el nombre del usuario
+    //include("../../../inc/admin/date.php"); //para obtener la fecha
 ?>
 
 <header class="header-desktop">
@@ -29,7 +28,7 @@
                                             <img src="../../images/icon/avatar-06.jpg"style="" alt="profile img" />
                                         </div>
                                         <div class="content">
-                                            <a class="js-acc-btn" href="../usuario/configuracion.php"><?php echo $nombre .' '. $apellido_p.' '. $apellido_m;?></a>
+                                            <a class="js-acc-btn" href="../usuario/configuracion.php"><?php echo $usr["usuario"];?></a>
                                         </div>
                                         <div class="account-dropdown js-dropdown">
                                             <div class="info clearfix">
@@ -40,9 +39,9 @@
                                                 </div>
                                                 <div class="content">
                                                     <h5 class="name">
-                                                        <a href="../usuario/configuracion.php"><?php echo $nombre .' '. $apellido_p.' '. $apellido_m;?></a>
+                                                        <a href="../usuario/configuracion.php"><?php echo $nombre;?></a>
                                                     </h5>
-                                                    <span class="email"><?php echo "$correo"; ?></span>
+                                                    <span class="email"><?php echo $usr["correo"]; ?></span>
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__body">

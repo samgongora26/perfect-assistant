@@ -1,3 +1,7 @@
+<?php 
+    //Se hace llamado a la sesion
+    include("../../../inc/admin/sesion.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,7 +36,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="overview-wrap">
-                                    <h2 class="title-1"><?php echo 'Bienvenido '. $nombre .' '. $apellido_p; ?></h2>
+                                    <h2 class="title-1"><?php echo 'Bienvenido '. $usr["nombres"]; ?></h2>
                                     <button class="au-btn au-btn-icon au-btn--blue">
                                         <i class="fa fa-download"></i>Reporte general 
                                     </button>
