@@ -48,22 +48,19 @@
                                         <div class="card-body">
                                             <div class="mx-auto d-block">
                                                 <button class="mx-auto d-block" data-toggle="modal" data-target="#edit_foto">
-                                                    <img class="rounded-circle"src="<?php echo $foto ?>" style="height: 100px; width: 100px;" alt="Card image cap">
+                                                    <img class="rounded-circle" id="fotografia" src="" style="height: 100px; width: 100px;" alt="Card image cap">
                                                 </button>
-                                                <h5 class="text-sm-center mt-2 mb-1"><?php echo $nombre .' '. $apellido_p .' '. $apellido_m?></h5>
-                                                <div class="location text-sm-center">
-                                                    <i class="fa fa-user"></i> <?php echo $usr["usuario"]; ?>
+                                                <h5 class="text-sm-center mt-2 mb-1" id="nombres"></h5>
+                                                <div class="location text-sm-center" id="user">
+                                                    <i class="fa fa-user"></i> 
                                                 </div>
                                             </div>
                                             <hr>
-                                            <div class="card-text text-sm-center">
-                                                <i class="fa fa-envelope"></i> <?php echo $usr["correo"]; ?>
+                                            <div class="card-text text-sm-center" id="correo">
+                                                <i class="fa fa-envelope"></i> 
                                             </div>
-                                            <div class="card-text text-sm-center">
-                                                <i class="fa fa-phone"></i> <?php echo $usr["telefono"]; ?>
-                                            </div>
-                                            <div class="card-text text-sm-center">
-                                                <i class="fa fa-birthday-cake"></i> <?php echo $usr["fecha_nac"]; ?>
+                                            <div class="card-text text-sm-center" id="telefono">
+                                                <i class="fa fa-phone"></i> 
                                             </div>
                                         </div>
                                         <div class="card-footer">
@@ -275,6 +272,8 @@
 
     <!-- Main JS-->
     <script src="../../js/main.js"></script>
+
+    <script src="../../../inc/funciones/usuarios/app.js"></script>
 
 </body>
 

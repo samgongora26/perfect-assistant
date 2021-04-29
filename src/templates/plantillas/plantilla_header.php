@@ -5,7 +5,7 @@
     //include("../../../inc/admin/date.php"); //para obtener la fecha
 ?>
 
-<header class="header-desktop">
+            <header class="header-desktop">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
                         <div class="header-wrap">
@@ -25,7 +25,7 @@
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="image">
-                                            <img src="../../images/icon/avatar-06.jpg"style="" alt="profile img" />
+                                            <img src="../../images/icon/<?php echo $usr["foto"]; ?>" style="height: 50px; width: 50px;" alt="profile img" />
                                         </div>
                                         <div class="content">
                                             <a class="js-acc-btn" href="../usuario/configuracion.php"><?php echo $usr["usuario"];?></a>
@@ -34,7 +34,7 @@
                                             <div class="info clearfix">
                                                 <div class="image">
                                                     <a href="../usuario/configuracion.php">
-                                                        <img src="../../images/icon/avatar-06.jpg" style="height: 50px; width: 50px;"  alt="John Doe" />
+                                                        <img src="../../images/icon/<?php echo $usr["foto"]; ?>"style="height: 50px; width: 50px;"  alt="John Doe" />
                                                     </a>
                                                 </div>
                                                 <div class="content">
