@@ -46,6 +46,7 @@
                             <div class="col-lg-7 col-md-7 col-sm-12">
                                 <div class="card">
                                         <div class="card-body">
+                                            <div id="mensaje"></div>          
                                             <div class="mx-auto d-block">
                                                 <button class="mx-auto d-block" data-toggle="modal" data-target="#edit_foto">
                                                     <img class="rounded-circle" id="fotografia" src="" style="height: 100px; width: 100px;" alt="Card image cap">
@@ -109,7 +110,7 @@
                                                     <label for="text-input" class=" form-control-label">usuario</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="text" id="nombre" name="text-input" placeholder="<?php echo $usr["usuario"]; ?>" value="<?php echo $usr["usuario"]; ?>" class="form-control">
+                                                    <input type="text" id="usuario_editar" placeholder="<?php echo $usr["usuario"]; ?>" value="<?php echo $usr["usuario"]; ?>" class="form-control">
                                                     <!--small class="form-text text-muted">Nombres</small-->
                                                 </div>
                                             </div>
@@ -118,38 +119,17 @@
                                                     <label for="text-input" class=" form-control-label">Nombre(s)</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="text" id="nombre" name="text-input" placeholder="<?php echo $nombre ?>" value="<?php echo $nombre?>" class="form-control">
+                                                    <input type="text" id="nombre_editar" placeholder="<?php echo $nombre ?>" value="<?php echo $nombre?>" class="form-control">
                                                     <!--small class="form-text text-muted">Nombres</small-->
                                                 </div>
                                             </div>
-                                            <!--Apellido P-->
                                             <div class="row form-group">
                                                 <div class="col col-md-3">
-                                                    <label for="text-input" class=" form-control-label">Primer apellido</label>
+                                                    <label for="text-input" class=" form-control-label">Telefono</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="text" id="apellido_pat" name="text-input" placeholder="<?php echo $apellido_p ?>"  value="<?php echo $apellido_p; ?>"class="form-control">
-                                                    <small class="form-text text-muted">Apellido paterno</small>
-                                                </div>
-                                            </div>
-                                            <!--Apellido M-->
-                                            <div class="row form-group">
-                                                <div class="col col-md-3">
-                                                    <label for="text-input" class=" form-control-label">Segundo apellido</label>
-                                                </div>
-                                                <div class="col-12 col-md-9">
-                                                    <input type="text" id="text-input" name="text-input" placeholder="<?php echo $apellido_m; ?>" value="<?php echo $apellido_m; ?>" class="form-control">
-                                                    <small class="form-text text-muted">Apellido materno</small>
-                                                </div>
-                                            </div>
-                                            <!--FECHA DE NAC-->
-                                            <div class="row form-group">
-                                                <div class="col col-md-3">
-                                                    <label for="text-input" class=" form-control-label">Fecha de nacimiento</label>
-                                                </div>
-                                                <div class="col-12 col-md-9">
-                                                    <input type="text" id="text-input" name="text-input" placeholder="<?php echo $usr["fecha_nac"]; ?>" value="<?php echo $usr["fecha_nac"]; ?>" class="form-control">
-                                                    <small class="form-text text-muted">YYYY-MM-DD</small>
+                                                    <input type="text" id="telefono_editar"  placeholder="<?php echo $usr["telefono"] ?>" value="<?php echo $usr["telefono"]?>" class="form-control" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
+                                                    <!--small class="form-text text-muted">Nombres</small-->
                                                 </div>
                                             </div>
                                             <div class="row form-group">
@@ -157,7 +137,7 @@
                                                     <label for="text-input" class=" form-control-label">Correo</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="text" id="text-input" name="text-input" placeholder="<?php echo $usr["correo"]; ?>" value="<?php echo $usr["correo"]; ?>" class="form-control">
+                                                    <input type="text" id="correo_editar"  placeholder="<?php echo $usr["correo"]; ?>" value="<?php echo $usr["correo"]; ?>" class="form-control">
                                                     <small class="form-text text-muted">Correo electronico</small>
                                                 </div>
                                             </div>
@@ -167,7 +147,7 @@
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-							<button type="button" class="btn btn-primary">Guardar</button>
+							<button type="button" class="btn btn-primary"  data-dismiss="modal" onclick="editar_usuario()">Guardar</button>
 						</div>
 					</div>
 				</div>

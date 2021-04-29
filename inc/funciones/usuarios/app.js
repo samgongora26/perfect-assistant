@@ -36,46 +36,47 @@ function llenar_formulario(usr) {
   //si el estado es activo entonces mostrará 
 }
 
-async function editar_usuario(id_necesario){
-  var id_necesario;
-  const edit_nombres = document.getElementById("edit_nombres"+id_necesario).value; 
-  const edit_apellidos = document.querySelector("#edit_apellidos"+id_necesario).value;
-  const edit_telefono = document.querySelector("#edit_telefono"+id_necesario).value;
-  const edit_correo = document.querySelector("#edit_correo"+id_necesario).value;
-  const edit_usuario = document.querySelector("#edit_usuario"+id_necesario).value;
-  const edit_contrasenia = document.querySelector("#edit_contrasenia"+id_necesario).value;
-  const edit_estado = document.querySelector("#edit_estado"+id_necesario).value;
+async function editar_usuario(){
+  var id_necesario = 1; //Se asigna 1 porque es de un solo usuario, debe apuntar siempre al usuario 1
+  const edit_nombres = document.querySelector("#nombre_editar").value; 
+  const edit_telefono = document.querySelector("#telefono_editar").value;
+  const edit_correo = document.querySelector("#correo_editar").value;
+  const edit_usuario = document.querySelector("#usuario_editar").value;
+
+  console.log(
+    id_necesario,
+    edit_nombres,
+    edit_telefono,
+    edit_usuario,
+    edit_correo
+  );
 
   try {
     const datos = new FormData();
     datos.append("id", id_necesario);
     datos.append("nombres", edit_nombres);
-    datos.append("apellidos", edit_apellidos);
     datos.append("telefono", edit_telefono);
     datos.append("correo", edit_correo);
-    datos.append("usuario", edit_usuario);
-    datos.append("contrasenia", edit_contrasenia);
-    datos.append("estado", edit_estado);
-    datos.append("accion", "actualizar");
+    datos.append("usuario", edit_usuario);  
+    datos.append("accion", "actualizar_usuario");
 
     const res = await fetch("../../../inc/peticiones/usuarios/funciones.php", {
       method: "POST",
       body: datos,
     });
     const data = await res.json();
-    //console.log(data);
+    console.log(data);
     //mesaje de exito
-    const mensajes = document.querySelector("#mensaje2");
+    const mensajes = document.querySelector("#mensaje");
     mensajes.innerHTML += `  
-      <div class="alert alert-danger alert-dismissible bg-success text-white border-0 fade show" role="alert">
+        <div class="sufee-alert alert with-close alert-success alert-dismissible fade show">                 
+          El usuario ha sido editdo con éxito.
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">×</span>
+            <span aria-hidden="true">×</span>
           </button>
-          <strong>El usuario ha sido editado exitosamente </strong>
-      </div>
+        </div>
       `;
-    //Se vacia el contenido de la tabla
-    document.getElementById("contenido_tabla").innerHTML="";
+    
     //Llamada a la funcion para llenar la tabla 
     mostrarServicios(); 
   } catch (error) {

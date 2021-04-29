@@ -7,6 +7,9 @@ switch ($accion) {
     case "mostrar":
         $resultado = mostrar_usuarios();
         break;
+    case "actualizar_usuario":
+        $resultado = actualizar_usuario();
+        break;
     
 }
 

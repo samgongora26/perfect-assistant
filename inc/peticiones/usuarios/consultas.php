@@ -28,17 +28,14 @@ function mostrar_usuarios(): array
 function actualizar_usuario(): array
 {
     try {
-        require '../../../conexion.php';
+        require '../../admin/db.php';
         $id = $_POST['id'];
         $nombres = $_POST['nombres'];
-        $apellidos = $_POST['apellidos'];
         $telefono = $_POST['telefono'];
         $correo =  $_POST['correo'];
         $usuario = $_POST['usuario'];
-        $contrasenia = $_POST['contrasenia'];
-        $estado = $_POST['estado'];
         
-        $sql = "UPDATE `usuarios` SET `nombres`= '$nombres',`apellidos`= '$apellidos',`telefono`=  '$telefono',`correo`= '$correo',`usuario`= '$usuario',`contrasenia`= '$contrasenia',`fotografia`= '1.jpg',`estado`= $estado WHERE `usuarios`.`id_usuario` = $id;";
+        $sql = "UPDATE `usuarios` SET `nombres`= '$nombres',`telefono`=  '$telefono',`correo`= '$correo',`usuario`= '$usuario' WHERE `usuarios`.`id_usuario` = $id;";
         $consulta = mysqli_query($conexion, $sql);
 
         $respuesta = array(
