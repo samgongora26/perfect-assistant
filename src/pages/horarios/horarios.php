@@ -43,20 +43,38 @@
                         
                         <div class="row m-t-30">
                             <div class="col-lg-5">
-                            <div class="card">
+                            <form id="form_agregar_horario" class="card">
                                     <div class="card-header">
                                         <strong>Formulario </strong> de registro
                                     </div>
                                     <div class="card-body card-block">
                                         <!--Formulario-->
-                                        <div action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                                        <div class="form-horizontal">
                                             <!--Nombre del puesto-->
                                             <div class="row form-group">
                                                 <div class="col col-md-3">
                                                     <label for="text-input" class=" form-control-label">Nombre</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="text" id="text-input" name="text-input" placeholder="primer turno" class="form-control">
+                                                    <input type="text" id="nombre_horario" name="nombre_horario" placeholder="primer turno" class="form-control">
+                                                    <!--small class="form-text text-muted">Nombres</small-->
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="text-input" class=" form-control-label">Hora inicio (formato 24 horas)</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="time" id="hora_inicio" name="nombre_horario" placeholder="7:00" class="form-control">
+                                                    <!--small class="form-text text-muted">Nombres</small-->
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="text-input" class=" form-control-label">Hora fin (formato 24 horas)</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="time" id="hora_fin" name="nombre_horario" placeholder="13:00" class="form-control">
                                                     <!--small class="form-text text-muted">Nombres</small-->
                                                 </div>
                                             </div>
@@ -69,7 +87,7 @@
                                         </button>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
                             <div class="col-lg-7">
                                 <!-- DATA TABLE-->
                                 <div class="table-responsive m-b-40">
@@ -82,23 +100,10 @@
                                                 <th>operaciones</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Primer turno</td>
-                                                <td>6:00 AM</td>
-                                                <td>2:00 PM</td>
-                                                <td>
-                                                    <div class="table-data-feature">
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                            <i class="zmdi zmdi-edit"></i>
-                                                        </button>
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                                            <i class="zmdi zmdi-delete"></i>
-                                                        </button>
-                                                    </div>
-                                                        
-                                                </td>
-                                            </tr>
+                                        <tbody id="contenido_horario">
+                                            <div id="mensaje"></div>
+                                            <!--AQUI ES GUARDADO EL CONTENIDO DE LOS HORARIOS-->
+                                            
                                         </tbody>
                                     </table>
                                 </div>
@@ -146,7 +151,7 @@
 
     <!-- Main JS-->
     <script src="../../js/main.js"></script>
-
+    <script src="../../../inc/funciones/horarios/app.js"></script>
 </body>
 
 </html>
